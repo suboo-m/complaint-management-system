@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complaint Management System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Complaint Management System</h1>
+            <p>Submit and Manage your complaints easily</p>
+        </header>
+        <main>
+            <section>
+                <h2>Submit a Complaint</h2>
+                <form id="complaintForm">
+                    <label for="name">Your name:?</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <label for="complaint">Your complaint:</label>
+                    <textarea id="complaint" placeholder="Enter your complaint"></textarea>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                    <button type="submit">Submit Complaint</button>
+                </form>
+            </section>
+            <section>
+                <h2>All Complaints</h2>
+                <div id="complaintList">
+                    <!-- Complaints will be displayed here -->
+                     <p>No complaints submitted yet.</p>
+                </div>
+            </section>
+            <!-- ================================= -->
+<!--          ADMIN SECTION            -->
+<!-- ================================= -->
+
+<!-- ================================= -->
+<!--          ADMIN SECTION            -->
+<!-- ================================= -->
+
+<section id="adminSection">
+
+    <!-- ADMIN LOGIN -->
+
+    <div id="adminLogin">
+
+        <h2>🔐 Admin Login</h2>
+
+        <p class="admin-description">
+            Login to access the complaint management dashboard.
+        </p>
+
+        <form id="adminForm">
+
+            <label for="adminPassword">
+                Admin Password:
+            </label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter admin password"
+            >
+
+            <button type="submit">
+                Login as Admin
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!--        ADMIN DASHBOARD             -->
+    <!-- ================================= -->
+
+    <div id="adminDashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h2>Admin Dashboard</h2>
+
+                <p>
+                    Complaint Management Panel
+                </p>
+            </div>
+
+            <button id="logoutButton">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="dashboard-stats">
+
+            <div class="stat-card">
+
+                <h3>Total Complaints</h3>
+
+                <strong id="totalComplaints">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>System Status</h3>
+
+                <strong>
+                    Active
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Admin Access</h3>
+
+                <strong>
+                    Granted
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- COMPLAINT MANAGEMENT -->
+
+        <div class="dashboard-complaints">
+
+            <h2>Manage Complaints</h2>
+
+            <div id="adminComplaintList">
+
+                <!-- Complaints will appear here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        </main>
+           <footer>
+        <p>&copy; 2026 Complaint Management System</p>
+    </footer>
+
+    <!-- Connects JavaScript to this webpage -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
